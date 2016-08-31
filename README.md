@@ -1,2 +1,2 @@
 # assets-finder
-Find media like MP3, MP4 and JPG from html and return array of values.
+Extension to get array of media assets like MP3, MP4 and JPG.
