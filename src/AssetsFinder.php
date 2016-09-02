@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the External Link Purifier Package
+ * This file is part of the Assets Finder Package
  *
  * (c) Nexuslink Services
  *
@@ -37,14 +37,15 @@ class AssetsFinder {
         $configArray = Yaml::parse(file_get_contents($this->pathToYml));
 
         if ($configArray['media_options']['mp3']) {
-            $content = MediaAssetsFinder::assetsFilter($content);
+            $content['mp3'] = MediaAssetsFinder::assetsFilter($content, 'mp3');
         }
         if ($configArray['media_options']['mp4']) {
-            $content = MediaAssetsFinder::assetsFilter($content);
+            $content['mp4'] = MediaAssetsFinder::assetsFilter($content, 'mp4');
         }
         if ($configArray['media_options']['jpg']) {
-            $content = MediaAssetsFinder::assetsFilter($content);
+            $content['jpg'] = MediaAssetsFinder::assetsFilter($content, 'jpg');
         }
+        
         return $content;
     }
     
