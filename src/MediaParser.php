@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace AssetsFinder\src;
+namespace AssetsFinder;
 
 use Symfony\Component\Yaml\Yaml;
 use AssetsFinder\src\Services\MediaAssetsFinder;
 
-class AssetsFinder {
+class MediaParser {
 
     private $pathToYml;
 
@@ -35,18 +35,19 @@ class AssetsFinder {
     public function FindMedia($content) {
         
         $configArray = Yaml::parse(file_get_contents($this->pathToYml));
+        $mediaList = array();
 
         if ($configArray['media_options']['mp3']) {
-            $content['mp3'] = MediaAssetsFinder::assetsFilter($content, 'mp3');
+            $mediaList['mp3'] = MediaAssetsFinder::assetsFilter($content, 'mp3');
         }
         if ($configArray['media_options']['mp4']) {
-            $content['mp4'] = MediaAssetsFinder::assetsFilter($content, 'mp4');
+            $mediaList['mp4'] = MediaAssetsFinder::assetsFilter($content, 'mp4');
         }
         if ($configArray['media_options']['jpg']) {
-            $content['jpg'] = MediaAssetsFinder::assetsFilter($content, 'jpg');
+            $mediaList['jpg'] = MediaAssetsFinder::assetsFilter($content, 'jpg');
         }
         
-        return $content;
+        return $mediaList;
     }
     
 }
