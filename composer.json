@@ -18,8 +18,8 @@
     },
     "autoload": {
         "psr-4": {
-            "AssetsFinder\\": "src/",
-            "AssetsFinder\\src\\Services\\": "src/Services/"
+            "AbuseKeywordPurifier\\": "src/",
+            "AbuseKeywordPurifier\\src\\Services\\": "src/Services/"
         }
     }
 }
