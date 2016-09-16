@@ -1,4 +1,9 @@
-media_options:
-    mp3: true
-    mp4: true
-    jpg: true
+profanities:
+    replace_with: '*'
+    bad_words: ['abuser', 'bitch', 'bitcher']
+    
+    
+    
+        
+    
+        
