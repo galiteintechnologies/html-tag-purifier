@@ -1,7 +1,7 @@
 {
-    "name": "nexuslinkservices/assets-finder",
+    "name": "nexuslinkservices/abuse-keyword-purifier",
     "type": "library",
-    "Description": "Extension to get array of media assets like MP3, MP4 and JPG",
+    "Description": "Replace or remove abuse keywords from content.",
     "license": "MIT",
     "authors": [
         {
