@@ -40,7 +40,10 @@ class ProfanityWordPurifier {
         $replace['y'] = '(y|y\.|y\-|¥|γ|ÿ|ý|Ÿ|Ý)';
         $replace['z'] = '(z|z\.|z\-|Ζ)';
         
-        for ($x = 0; $x < count($whiteList); $x++) {
+        $replacement = array();
+        $whiteListCount = count($whiteList);
+        
+        for ($x = 0; $x < $whiteListCount; $x++) {
             $replacement[$x] = str_repeat($replaceWith, strlen($whiteList[$x]));
             $whiteList[$x] = '/' . str_ireplace(array_keys($replace), array_values($replace), $whiteList[$x]) . '/i';
         }
