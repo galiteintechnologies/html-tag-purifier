@@ -6,7 +6,7 @@
          colors="true">
 
     <testsuites>
-        <testsuite name="Abuse Keyword Purifier Test suite">
+        <testsuite name="Html Tag Purifier Test suite">
             <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>

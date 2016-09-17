@@ -1,0 +1,23 @@
+{
+    "name": "nexuslinkservices/html-tag-purifier",
+    "type": "library",
+    "Description": "Remove specific html tags from content.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nexuslink Services",
+            "email": "nexuslink.contributor@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.*"        
+    },
+    "autoload": {
+        "psr-4": {
+            "HtmlTagPurifier\\": "src/"
+        }
+    }
+}
