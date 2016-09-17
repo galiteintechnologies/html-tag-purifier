@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Assets Finder Package
+ * This file is part of the Abuse Keyword Purifier Package
  *
  * (c) Nexuslink Services
  *
