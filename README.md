@@ -6,6 +6,14 @@ Replace or remove abuse keywords from content.
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nexuslinkservices/abuse-keyword-purifier/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nexuslinkservices/abuse-keyword-purifier/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/nexuslinkservices/abuse-keyword-purifier/badges/build.png?b=master)](https://scrutinizer-ci.com/g/nexuslinkservices/abuse-keyword-purifier/build-status/master)
 
+## Installation
+
+If you use composer, you can add this package by running 
+
+````
+composer require nexuslinkservices/abuse-keyword-purifier
+````
+
 ## Usage
 
 Create configuration file with bad words list and character with which you want to replace bad words. For ex.
