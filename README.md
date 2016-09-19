@@ -22,7 +22,7 @@ use HtmlTagPurifier\HtmlTagFilter;
 
 $htmlTagFilter = new HtmlTagFilter();
         
-$content = "<p>Thanks for coming.</p><br/><p>I have a special plan for picnic.</p> <b>Super <i>Excited!!</i></b>";
+$content = "<p>Thanks for coming.</p><br/><p>I have a special plan for picnic</p>. <b>Super <i>Excited!!</i></b>";
 $tags = array("i", "p");
 
 $result = $htmlTagFilter->purify($content, $tags);
