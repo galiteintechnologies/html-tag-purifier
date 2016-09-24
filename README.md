@@ -18,6 +18,7 @@ composer require nexuslinkservices/html-tag-purifier
 
 ```
 <?php
+
 use HtmlTagPurifier\HtmlTagFilter;
 
 $htmlTagFilter = new HtmlTagFilter();
@@ -28,7 +29,7 @@ $tags = array("i", "p");
 $result = $htmlTagFilter->purify($content, $tags);
 ```
 
-## Output on PHP
+## Output
 
 ```
 Thanks for coming.<br/>I have a special plan for picnic. <b>Super Excited!!</b>
