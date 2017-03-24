@@ -11,7 +11,7 @@ Remove specific html tags from content.
 If you use composer, you can add this package by running 
 
 ````
-composer require nexuslinkservices/html-tag-purifier
+composer require galiteintechnologies/html-tag-purifier
 ````
 
 ## Usage
